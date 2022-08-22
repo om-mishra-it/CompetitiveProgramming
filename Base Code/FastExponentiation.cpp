@@ -12,4 +12,5 @@ int fastExponent(int base, int power, int modValue) {
         base = (1LL * (base % modValue) * (base % modValue)) % modValue;
         power = power >> 1; // dividing power by 2 (i.e. shifting one bit rightwards)
     }
+    return result;
 }
